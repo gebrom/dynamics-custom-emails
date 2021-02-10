@@ -1,12 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.Workflows", "DXTools.CRM.Solutions.CustomEmails.Workflows\DXTools.CRM.Solutions.CustomEmails.Workflows.csproj", "{725ACBA4-D53D-4522-AC32-99B0C7EDCC3A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.Common", "DXTools.CRM.Solutions.CustomEmails.Common\DXTools.CRM.Solutions.CustomEmails.Common.csproj", "{63652FFA-3FD6-48EC-84FD-C8605FF5C9D8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keys", "Keys", "{E9B82823-9ABB-4402-B656-FAA35AA729FD}"
 	ProjectSection(SolutionItems) = preProject
 		Keys\DXTools.snk = Keys\DXTools.snk
@@ -14,19 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keys", "Keys", "{E9B82823-9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferencedAssemblies", "ReferencedAssemblies", "{6CED3EC4-6BB0-40BC-9C97-588F154D8043}"
 EndProject
-Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "DXTools.CRM.Solutions.CustomEmails.CrmPackage", "DXTools.CRM.Solutions.CustomEmails.CrmPackage\DXTools.CRM.Solutions.CustomEmails.CrmPackage.csproj", "{A06D98F7-6313-4755-8B5B-634CD6CD7764}"
-	ProjectSection(ProjectDependencies) = postProject
-		{725ACBA4-D53D-4522-AC32-99B0C7EDCC3A} = {725ACBA4-D53D-4522-AC32-99B0C7EDCC3A}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.IntegrationTests", "DXTools.CRM.Solutions.CustomEmails.IntegrationTests\DXTools.CRM.Solutions.CustomEmails.IntegrationTests.csproj", "{A2851CEB-EA44-4318-B1E7-644B10A75677}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ILMerge", "ILMerge", "{0CA6678B-0D4E-431A-B54A-37EBAD4852A0}"
 	ProjectSection(SolutionItems) = preProject
 		ReferencedAssemblies\ILMerge\ILMerge.exe = ReferencedAssemblies\ILMerge\ILMerge.exe
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.UnitTests", "DXTools.CRM.Solutions.CustomEmails.UnitTests\DXTools.CRM.Solutions.CustomEmails.UnitTests.csproj", "{54A57B3A-DF33-4C6C-ABF2-826650B5EDED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSON.NET", "JSON.NET", "{A9B3C4C1-C7C0-43CF-B08D-1C2AF0D0E652}"
 EndProject
@@ -40,6 +27,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XrmTestFramework", "XrmTest
 	ProjectSection(SolutionItems) = preProject
 		ReferencedAssemblies\XrmTestFramework\Xrm.Framework.Test.dll = ReferencedAssemblies\XrmTestFramework\Xrm.Framework.Test.dll
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.Workflows", "DXTools.CRM.Solutions.CustomEmails.Workflows\DXTools.CRM.Solutions.CustomEmails.Workflows.csproj", "{725ACBA4-D53D-4522-AC32-99B0C7EDCC3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.Common", "DXTools.CRM.Solutions.CustomEmails.Common\DXTools.CRM.Solutions.CustomEmails.Common.csproj", "{63652FFA-3FD6-48EC-84FD-C8605FF5C9D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.IntegrationTests", "DXTools.CRM.Solutions.CustomEmails.IntegrationTests\DXTools.CRM.Solutions.CustomEmails.IntegrationTests.csproj", "{A2851CEB-EA44-4318-B1E7-644B10A75677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXTools.CRM.Solutions.CustomEmails.UnitTests", "DXTools.CRM.Solutions.CustomEmails.UnitTests\DXTools.CRM.Solutions.CustomEmails.UnitTests.csproj", "{54A57B3A-DF33-4C6C-ABF2-826650B5EDED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,12 +50,6 @@ Global
 		{63652FFA-3FD6-48EC-84FD-C8605FF5C9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63652FFA-3FD6-48EC-84FD-C8605FF5C9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63652FFA-3FD6-48EC-84FD-C8605FF5C9D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A06D98F7-6313-4755-8B5B-634CD6CD7764}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{A2851CEB-EA44-4318-B1E7-644B10A75677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2851CEB-EA44-4318-B1E7-644B10A75677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2851CEB-EA44-4318-B1E7-644B10A75677}.Release|Any CPU.ActiveCfg = Release|Any CPU
